@@ -1,0 +1,75 @@
+<!DOCTYPE resources [<!ENTITY appname "Sample App">]>
+
+<resources>
+    <string name="APP_NAME" translatable="false">&appname;</string>
+    <string name="hello">main</string>
+    <string name="btn">Main click</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="request">Request</string>
+
+    // Loading Message
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="logging_in">Logging in, please wait&#8230;</string>
+    <string name="registering">Registering&#8230;</string>
+    <string name="updating_profile">Updating profile&#8230;</string>
+
+    //Message
+    <string name="no_internet_connection">No Internet Connection !</string>
+    <string name="no_internet_msg">Please activate your internet connection and try again</string>
+
+
+    <string name="Attention">Attention!</string>
+
+    <string name="maintenance_title">System Maintenance</string>
+    <string name="maintenance_message">The system is currently undergoing routine maintenance to ensure you get the best experience. Please check back later.</string>
+    <string name="resend_otp_success_msg">OTP resend successfully</string>
+    <string name="okay">Ok</string>
+    <string name="no">No</string>
+
+    <string name="error">Error!</string>
+    <string name="server_error">Could not connect with server. Please try again later.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    /////////////////////////
+
+    //LoginScreenString
+    <string name="appName">Blood Share</string>
+    <string name="userEmailLogin">User Email</string>
+    <string name="passwordLogin">Password</string>
+    <string name="forgotPassLogin">Forgot Pass</string>
+    <string name="new_user">New User?</string>
+    <string name="register">Register Now</string>
+    <string name="buttonLogin">Login</string>
+
+    //SignUp
+    <string name="userNameSignUp">User Name</string>
+    <string name="userEmailSignUp">User Email</string>
+    <string name="userContractSignUp">User Contract</string>
+    <string name="userWebsiteSignUp">User Website</string>
+    <string name="passwordSignUp">Password</string>
+    <string name="confirmPasswordSignUp">Confirm Password</string>
+    <string name="agreeTermsAndConditionsSignUp">Agree Terms And Conditions</string>
+    <string name="createAccountSignUp">Create Account</string>
+
+
+    //Forgot Password
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="OTPEmailForgotPassword">An OTP will send to your Email</string>
+    <string name="enterYouEmailForgotPassword">Enter your Email</string>
+    <string name="sendOTPButton">Send OTP</string>
+
+    // Reset Password
+    <string name="resetPassword">Reset Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="resetButton">Reset</string>
+
+    <string name="no_data_found">Could not find recipe with that name</string>
+
+</resources>

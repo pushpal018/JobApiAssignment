@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00224F</color>
+    <color name="colorPrimaryDark">#00224F</color>
+    <color name="colorAccent">#00224F</color>
+    <color name="gray">#9D9D9D</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFD700</color>
+    <color name="green">#0FAA3C</color>
+    <color name="purple">#64288C</color>
+    <color name="light_red">#FFF5F5</color>
+
+
+    <color name="btnDisabled">#cfd7e7</color>
+    <color name="offWhite">#F6F6F6</color>
+    <color name="darkWhite">#e2e1e1</color>
+    <color name="redLight">@android:color/holo_red_light</color>
+    <color name="divider_color">#e4e4e4</color>
+    <color name="last_30_days">#545454</color>
+
+    <color name="dashboard_background_color">#F2F2F2</color>
+    <color name="divider_color_profile">#E9E9E9</color>
+
+
+    /////////////////////////////////
+
+    <color name="header_text_color">#00224F</color>
+    <color name="sub_header_text_color">#3A3A3A</color>
+    <color name="hint_text_color">#CFCFCF</color>
+    <color name="green_color">#18A24F</color>
+    <color name="green_light">#1BBF5D</color>
+
+    <color name="orange">#FF741E</color>
+    <color name="orange_text_color">#FF863B</color>
+    <color name="transaction_text_color">#909090</color>
+    <color name="blue_text">#1847A2</color>
+    <color name="edit_text_background_color">#F7F7F7</color>
+
+
+
+
+    <color name="card_red">#DC0808</color>
+    <color name="card_red_light">#FF1C1C</color>
+    <color name="card_item_background">#C7C7C7</color>
+
+
+    <color name="dashboard">#F9F9F9</color>
+
+    <color name="success_text_color">#00A693</color>
+    <color name="failed_text_color">#CC3333</color>
+
+
+    <color name="brand_color">#00224F</color>
+
+
+
+</resources>

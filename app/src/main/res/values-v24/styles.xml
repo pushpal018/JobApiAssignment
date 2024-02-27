@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Navigation_View_Theme">
+        <item name="android:textSize">@dimen/menu_title_text_size</item>
+        <item name="android:titleMarginTop">8dp</item>
+    </style>
+</resources>

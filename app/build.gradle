@@ -1,0 +1,252 @@
+plugins {
+    //id "io.sentry.android.gradle" version "3.4.2"
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+//    id 'com.google.gms.google-services'
+ //   id 'com.google.firebase.crashlytics'
+
+}
+
+
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.api.search"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+    kotlinOptions {
+        jvmTarget=17
+    }
+    buildFeatures {
+        buildConfig = true
+    }
+
+
+
+//    signingConfigs {
+//        release {
+////            storeFile file(RELEASE_STORE_FILE)
+////            storePassword RELEASE_STORE_PASSWORD
+////            keyAlias RELEASE_KEY_ALIAS
+////            keyPassword RELEASE_KEY_PASSWORD
+//        }
+//        beta {}
+//        debug {}
+//    }
+//    buildTypes {
+//        debug {
+//            minifyEnabled false
+//            shrinkResources false
+//            debuggable true
+//            applicationIdSuffix ".debug"
+//            versionNameSuffix "-debug"
+//            buildConfigField "String", "TYPE", '"I AM A DEBUG NINJA"'
+//
+//        }
+//        beta{
+//            signingConfig signingConfigs.debug
+//            applicationIdSuffix ".beta"
+//            versionNameSuffix "-beta"
+//            buildConfigField "String", "TYPE", '"I AM A BETA NINJA"'
+//        }
+//        release {
+//            minifyEnabled true   // Obfuscate and minify codes
+//            shrinkResources true // Remove unused resources
+//            debuggable false
+////            signingConfig signingConfigs.release
+//        }
+//    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    namespace 'com.api.search'
+
+
+    //// product flavors
+
+
+
+
+//    flavorDimensions "default"
+//
+//
+//
+//    productFlavors{
+//        genaralMarchent{
+//            applicationId "com.blood.share"
+//            manifestPlaceholders = [appLabel:"Blood Share BD"]
+//            dimension "default"
+//
+//        }
+//        onbordMarchent{
+//            applicationId "com.blood.share"
+//            manifestPlaceholders =  [appLabel:"Blood Share BD"]
+//            dimension  "default"
+//
+//
+//        }
+//
+//    }
+
+
+    //// product flavors
+}
+
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.4.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+//    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
+    def androidx_version = '1.1.0'
+    def legacy_support_version = '1.0.0'
+    def material_version = '1.9.0-alpha02'
+    def junit_version = '4.13.2'
+    def constraint_layout_version = '2.0.4'
+
+    //UI
+    def card_view_version = '1.0.0'
+    def recycler_view_version = '1.2.1'
+
+    // TESTING
+    def runner_version = '1.4.0'
+    def espresso_version = '3.4.0'
+
+    // Retrofit
+    def retrofit_version = '2.9.0'
+    def retrofit_loggingInterceptor = '5.0.0-alpha.11'
+    def butterKnife_version = '10.1.0'
+
+    // REACTIVE
+    def rx_java_version = '2.1.9'
+    def rx_android_version = '2.0.2'
+    def rx_adapter_version = '2.2.0'
+
+    // DAGGER 2
+    def dagger_version = '2.21'
+    //def dagger_version = '2.28.3'
+
+    // Image
+    def picasso_version = '2.5.2'
+    def glide_version = '4.9.0'
+    def okhttp_version = '2.7.5'
+    def circle_image_view_version = '2.2.0'
+
+
+    // FIRE_BASE
+    def fire_base_messaging = '22.0.0'
+    def fire_base_analytics = '19.0.0'
+    def fire_base_crashlytics = '18.3.5'
+
+
+    def lottieVersion = '6.0.0'
+
+
+    // ROOM DATABASE
+//    def room_version = "2.2.0-beta01"
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.21"
+    implementation "androidx.appcompat:appcompat:$androidx_version"
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Testing
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test:runner:$runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+   // testImplementation "androidx.room:room-testing:$room_version"
+
+    // CARD_VIEW + RECYCLER_VIEW
+    implementation "androidx.cardview:cardview:$card_view_version"
+    implementation "androidx.recyclerview:recyclerview:$recycler_view_version"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    // RETROFIT
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    kapt "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$retrofit_loggingInterceptor"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+
+    // RxJava and RxAndroid
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rx_adapter_version"
+
+    // ButterKnife - Dependency Injection
+    implementation "com.jakewharton:butterknife:$butterKnife_version"
+    kapt "com.jakewharton:butterknife-compiler:$butterKnife_version"
+
+    // Dagger 2
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    // FIRE_BASE
+    implementation "com.google.firebase:firebase-crashlytics:$fire_base_crashlytics"
+    implementation "com.google.firebase:firebase-analytics:$fire_base_analytics"
+    implementation "com.google.firebase:firebase-messaging:$fire_base_messaging"
+    implementation platform('com.google.firebase:firebase-bom:31.2.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+
+
+    // Picasso - Image Library
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+    implementation "com.squareup.okhttp:okhttp:$okhttp_version"
+
+    // Glide - Image Library
+    implementation ("com.github.bumptech.glide:glide:$glide_version"){
+        exclude group: "com.android.support"
+    }
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    //CircleImageView Library
+    implementation "de.hdodenhof:circleimageview:$circle_image_view_version"
+
+
+
+
+    // Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+
+    implementation("io.appwrite:sdk-for-android:4.0.0")
+    implementation 'com.github.amrdeveloper:lottiedialog:1.0.0'
+}
+
+
+//apply plugin: 'com.google.firebase.crashlytics'
+//apply plugin: 'com.google.gms.google-services'
